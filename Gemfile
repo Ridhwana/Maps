@@ -20,7 +20,7 @@ end
 gem 'jquery-rails'
 gem 'haml-rails'
 gem 'haml_assets'
-
+gem 'backbone-on-rails'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
