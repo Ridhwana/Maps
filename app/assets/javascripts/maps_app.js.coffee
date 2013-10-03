@@ -3,7 +3,11 @@ window.MapsApp =
   Collections: {}
   Views: {}
   Routers: {}
-  initialize: -> alert 'Hello from Backbone!'
+
+  initialize: ->
+    console.log "initialise backbone app"
+    new MapsApp.Routers.Entries()
+    Backbone.history.start()
 
 $(document).ready ->
   MapsApp.initialize()
