@@ -21,6 +21,12 @@ gem 'jquery-rails'
 gem 'haml-rails'
 gem 'haml_assets'
 gem 'backbone-on-rails'
+
+group :assets do
+  gem 'sass-rails',   '~> 3.2.3'
+  gem 'coffee-rails', '~> 3.2.1'
+  gem 'handlebars_assets', '0.12.0'
+end
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
