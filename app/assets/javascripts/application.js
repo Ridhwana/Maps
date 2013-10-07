@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
+//= require vendor/bootbox.js
 //= require underscore
 //= require backbone
 //= require handlebars
