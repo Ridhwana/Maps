@@ -21,6 +21,7 @@ gem 'jquery-rails'
 gem 'haml-rails'
 gem 'haml_assets'
 gem 'backbone-on-rails'
+gem 'twitter-bootstrap-rails'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
