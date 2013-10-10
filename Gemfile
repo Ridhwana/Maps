@@ -11,10 +11,8 @@ end
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
-
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
   gem 'uglifier', '>= 1.0.3'
+  gem 'handlebars_assets', '0.12.0'
 end
 
 gem 'jquery-rails'
@@ -23,11 +21,6 @@ gem 'haml_assets'
 gem 'backbone-on-rails'
 gem 'twitter-bootstrap-rails'
 
-group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-  gem 'handlebars_assets', '0.12.0'
-end
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
