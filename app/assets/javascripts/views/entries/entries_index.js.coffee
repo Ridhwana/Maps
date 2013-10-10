@@ -26,6 +26,12 @@ class MapsApp.Views.EntriesIndex extends Backbone.View
             console.log "init CB"
             ge = instance
             ge.getWindow().setVisibility true
+          # add a navigation control
+            ge.getNavigationControl().setVisibility ge.VISIBILITY_AUTO
+            
+            # add some layers
+            ge.getLayerRoot().enableLayerById ge.LAYER_BORDERS, true
+            ge.getLayerRoot().enableLayerById ge.LAYER_ROADS, true
 
           failureCB = (errorCode) ->
             console.log "error"
