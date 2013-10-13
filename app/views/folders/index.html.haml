@@ -1,0 +1,6 @@
+.title Galleries
+- @folders.each do |folder|
+  .folder
+    %h2= link_to folder.name, folder
+    Links: #{folder.links.size}
+%p= link_to "New Gallery", new_folder_path

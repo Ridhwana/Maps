@@ -1,0 +1,16 @@
+.title 
+  =@folder.name
+#links
+  - @folder.links.each do |link|
+    .link
+      .name= link.name
+      .actions
+        = link_to "edit", edit_link_path(link)
+        |
+        \#{link_to "remove", link, :confirm => 'Are you sure?', :method => :delete}
+  .clear
+%p
+  = link_to "Add a file", new_link_path(:folder_id => @folder)
+  |
+  \#{link_to "Remove Gallery", @folder, :confirm => 'Are you sure?', :method => :delete} |
+  \#{link_to "View Galleries", folders_path}

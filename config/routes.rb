@@ -1,5 +1,10 @@
 MapsApp::Application.routes.draw do
   root to: "main#index"
+  root to: "folders#index"
+
+  resources :folders
+  resources :links
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
